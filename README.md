@@ -35,25 +35,6 @@ Install dependencies
 
 pip install -r requirements.txt
 Run the project
-
-
-python house_price_prediction.py
-
-📁 Project Structure
-
-house-price-prediction/
-
-├── house_price_prediction.py  # Main project file
-├── requirements.txt           # Python dependencies
-├── README.md                  # Project documentation
-├── .gitignore                # Git ignore rules
-├── LICENSE                   # MIT License
-├── data/                     # Dataset directory (gitignored)
-│   └── house_prices.csv      # Sample dataset
-├── models/                   # Trained models (gitignored)
-│   └── house_price_model.joblib
-└── notebooks/                # Jupyter notebooks (optional)
-    └── exploration.ipynb
     
 🧠 Features
 
@@ -131,15 +112,6 @@ new_data = pd.DataFrame({
 })
 
 predictions = model.predict(new_data)
-
-📊 Results
-The project achieves competitive performance on house price prediction:
-
-Model	MAE	RMSE	R² Score
-Ridge	$45,200	$68,100	0.832
-HistGradientBoosting	$38,500	$59,200	0.874
-Random Forest	$41,800	$63,500	0.855
-Tuned HistGB	$36,100	$56,800	0.891
 
 🔧 Configuration
 
