@@ -133,7 +133,6 @@ new_data = pd.DataFrame({
 predictions = model.predict(new_data)
 
 📊 Results
-
 The project achieves competitive performance on house price prediction:
 
 Model	MAE	RMSE	R² Score
@@ -141,7 +140,9 @@ Ridge	$45,200	$68,100	0.832
 HistGradientBoosting	$38,500	$59,200	0.874
 Random Forest	$41,800	$63,500	0.855
 Tuned HistGB	$36,100	$56,800	0.891
+
 🔧 Configuration
+
 Key Parameters
 test_size: 0.2 (20% for testing)
 
