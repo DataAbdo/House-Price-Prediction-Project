@@ -29,17 +29,20 @@ This project implements a complete end-to-end machine learning pipeline for hous
    ```bash
    git clone https://github.com/yourusername/house-price-prediction.git
    cd house-price-prediction
+   
 Install dependencies
 
-bash
+
 pip install -r requirements.txt
 Run the project
 
-bash
+
 python house_price_prediction.py
+
 📁 Project Structure
-text
+
 house-price-prediction/
+
 ├── house_price_prediction.py  # Main project file
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # Project documentation
@@ -51,8 +54,11 @@ house-price-prediction/
 │   └── house_price_model.joblib
 └── notebooks/                # Jupyter notebooks (optional)
     └── exploration.ipynb
+    
 🧠 Features
+
 🔧 Data Preprocessing
+
 Automatic handling of missing values (median for numerical, mode for categorical)
 
 One-hot encoding for categorical variables with frequency threshold
@@ -62,6 +68,7 @@ Standard scaling for numerical features
 Log transformation for target variable to handle skewness
 
 🤖 Machine Learning Models
+
 Ridge Regression: Linear model with L2 regularization
 
 HistGradientBoosting: Efficient gradient boosting implementation
@@ -69,6 +76,7 @@ HistGradientBoosting: Efficient gradient boosting implementation
 Random Forest: Ensemble method with multiple decision trees
 
 📈 Model Evaluation
+
 Mean Absolute Error (MAE): Primary evaluation metric
 
 Root Mean Squared Error (RMSE): Penalizes larger errors
@@ -78,6 +86,7 @@ R² Score: Explains variance in target variable
 Cross-validation: Robust performance estimation
 
 🎯 Hyperparameter Tuning
+
 Randomized search with cross-validation
 
 Custom scoring function for business metrics
@@ -85,11 +94,15 @@ Custom scoring function for business metrics
 Parallel processing for faster optimization
 
 💻 Usage
+
 Basic Usage
+
 python
+
 from house_price_prediction import HousePricePredictor
 
 # Initialize predictor
+
 predictor = HousePricePredictor()
 
 # Run complete pipeline
@@ -118,7 +131,9 @@ new_data = pd.DataFrame({
 })
 
 predictions = model.predict(new_data)
+
 📊 Results
+
 The project achieves competitive performance on house price prediction:
 
 Model	MAE	RMSE	R² Score
@@ -148,6 +163,7 @@ Adjust hyperparameter search spaces
 Customize evaluation metrics
 
 🤝 Contributing
+
 We welcome contributions! Please feel free to submit pull requests, report bugs, or suggest new features.
 
 Contribution Guidelines
@@ -181,6 +197,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 GitHub: @yourusername
 
 🙏 Acknowledgments
+
 Scikit-learn team for the excellent machine learning library
 
 Kaggle community for datasets and inspiration
@@ -188,6 +205,7 @@ Kaggle community for datasets and inspiration
 Open source contributors for valuable tools and libraries
 
 📚 Related Projects
+
 Real Estate Analysis Toolkit
 
 ML Pipeline Framework
